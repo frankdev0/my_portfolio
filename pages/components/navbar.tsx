@@ -3,25 +3,41 @@ import styles from '@/styles/Home.module.css'
 import Link from 'next/link';
 import { HiOutlineBars3BottomLeft } from "react-icons/hi2";
 import { MdOutlineClose } from "react-icons/md";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 export default function Navbar () {    
 
     const [toggleMenu, setToggleMenu] = useState(false)
+    const [scrolled, setScrolled] = useState(false);
+
+
+
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 0) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
 
 
     return (
-        <nav className={styles.navbg}>
+        <nav className={`${styles.navbg} ${scrolled ? styles.scrolledd : ''}`}>
         <div className={styles.navwrap}>
-            {/* <div className={styles.navwrapper}> */}
           <div><Image src='/next.png' alt='logo' width={50} height={50} /></div>
           <div className={styles.desktopMenu}>
             <Link href={'#'} className={styles.menuitems}>About</Link>
             <Link href={'#'} className={styles.menuitems}>Experience</Link>
             <Link href={'#'} className={styles.menuitems}>Project</Link>
           </div>
-          {/* </div> */}
           {/* MOBILE MENU  */}
           <div className={styles.mobileMenu}>
             {!toggleMenu && (

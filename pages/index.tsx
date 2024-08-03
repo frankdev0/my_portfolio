@@ -22,8 +22,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
+      <div className={styles.herobg}>
         <Navbar/>
         <Herosection/>
+      </div>
         <Overview/>
         <Mystacks/>
         <Experience/>

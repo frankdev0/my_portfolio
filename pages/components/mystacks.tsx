@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
+import {motion} from 'framer-motion';
 
 interface stackProps  {
     image:string;
@@ -89,13 +90,19 @@ export default function Mystacks () {
             <div className='row'>
             <div className='col-12'>
                 <div className={styles.stackgrid}>
-                    {stacks.map((stack:stackProps) => (
-                        <div className={styles.eachstack} key={stack.id}>
+                    {stacks.map((stack:stackProps, i) => (
+                        <motion.div 
+                        className={styles.eachstack} 
+                        key={stack.id}
+                        initial={{opacity:0, translateX:-50, translateY:-50}}
+                        animate={{opacity:1, translateX:0, translateY:0}}
+                        transition={{duration:0.3, delay: i * 0.5}}
+                        >
                             <div>
                         <Image src={stack.image} alt='stacks' width={60} height={50}/>
                         <h5 className={styles.stacktitle}>{stack.title}</h5>
                         </div>
-                    </div>
+                    </motion.div>
                     ))}
                     
                 </div>

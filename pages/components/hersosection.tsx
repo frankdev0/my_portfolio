@@ -7,12 +7,22 @@ export default function Herosection () {
 
 
     return (
-        <div className={styles.herobg}>
+        <div className={styles.herbg}>
+        <div className={styles.heroPosition}>
         <div>
-        <div >
+        {/* <div >
             <h1 className={styles.herotext}><span className={styles.intro}>Hi, I&lsquo;m</span> <span className={styles.name}>Frank</span></h1>
             <h5 className={styles.introtext}>I develop web applications, user interfaces and 3D visuals</h5>
-        </div>
+        </div> */}
+        <div className='mb-5'>
+    <h1 className={styles.herotext}>
+      <span className={styles.intro}>Hi, I&lsquo;m </span> 
+      <span className={styles.name}>Frank</span>
+    </h1>
+    <h5 className={styles.introtext}>
+      I develop web applications, user interfaces and 3D visuals
+    </h5>
+  </div>
         <div className={styles.linewrap}>
             <div className={styles.roundball}></div>
             <div className={styles.line}></div>
@@ -31,6 +41,7 @@ export default function Herosection () {
             <div className={styles.pills}>
             <FaXTwitter />
             </div>
+        </div>
         </div>
         </div>
         </div>
