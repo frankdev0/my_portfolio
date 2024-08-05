@@ -40,7 +40,7 @@ export default function Experience () {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
-    date="March 2013- August 2023"
+    date="March 2023- August 2023"
     iconStyle={{ background: '#1D1836', color: '#fff' }}
     contentStyle={{ background: '#1D1836', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  #1D1836' }}
