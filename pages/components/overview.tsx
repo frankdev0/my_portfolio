@@ -14,8 +14,8 @@ export default function Overview () {
             </div>
             <div className='row'>
             <div className='col-12 col-lg-8'>
-            <p className={styles.summary}>I am a detail-oriented Frontend Developer with a passion for creating quality applications using JavaScript and its frameworks. My journey began in 2019, after completing a zero-mastery program in web development. Since then, I&lsquo;ve gained hands-on experience by contributing to various projects and acquiring certifications in software and web development.</p>
-            <p className={styles.summary}>Proficient in JavaScript, Typescript, Next, React, CSS, HTML, and more, I specialize in crafting interactive user interfaces and dynamic user experiences. I am confident, well-organized, and continuously curious about learning new technologies. I thrive on creative problem-solving and am perpetually working to improve my skills one challenge at a time.</p>
+            <p className={styles.summary}>As a Software Developer with a degree in Information Management Technology, I bring a unique combination of technical expertise, and IT knowledge to the table. with over 4 years experience in developing and designing web applications using cutting edge technologies such as JavaScript, ReactJS, and TypeScript.</p>
+            <p className={styles.summary}>I am well-versed in building user-centric, secure web applications. Proficient in intergrating external libraries and experienced in creating responsive, mobile-first designs with Figma. I am also skilled in optimizing page load times and implementing SEO strategies. My background in Information Management Technology allows me to approach development with a secure-first mindset. I am a team player who enjoys collaborating with cross-functional teams to deliver innovative solutions for complex problems. I am always looking to expand my skills and stay up-to-date with the latest technologies in the industry. </p>
             <p className={styles.summary}>Outside of coding, you&lsquo;ll often find me on the football field or immersed in video games.</p>
             </div>
             </div>

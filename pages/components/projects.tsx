@@ -7,6 +7,8 @@ import {
     useMotionValue,
     useSpring,
   } from "framer-motion";
+import { url } from 'inspector';
+import Link from 'next/link';
 
   interface Projectt {
     projectImage: string;
@@ -25,62 +27,68 @@ export default function Projects () {
         {
             projectImage:'/project.png',
             id:1,
-            porjectSummary:"Traders of Africa web base and ecommerce platform specializing in bulk agricultural produce purchase for aggregators",
-            title:'Linkcreator AI',
+            porjectSummary:"Sporty Credit is a digital money lending company, providing individuals with credit and micro loan solutions personal and busines use",
+            title:'Loan Admin Dashboard',
             stackOne:'#Next Js',
-            stackTwo:'#Python',
-            stackThree:'#Bootstrap',
-            stackFour:'#TypeScript'
+            stackTwo:'#Material UI',
+            stackThree:'#Postgre sql',
+            stackFour:'#TypeScript',
+            url:'https://admin.sportycredit.com/'
         },
         {
-            projectImage:'/three.png',
+            projectImage:'/saas.jpeg',
             id:2,
-            porjectSummary:"Traders of Africa web base and ecommerce platform specializing in bulk agricultural produce purchase for aggregators",
-            title:`Buyer's Hub`,
-            stackOne:'#React Js',
+            porjectSummary:"An AI advanced software that automatically assists website owners and users to promote their articles and site content.",
+            title:`Saas Linkcreator`,
+            stackOne:'#Next Js',
             stackTwo:'#Boostrap',
-            stackThree:'#Postgre sql',
-            stackFour:'#Typescript Js'
+            stackThree:'#Django',
+            stackFour:'#Typescript Js',
+            url:'https://dev.linkcreator.ai/'
         },
         {
-            projectImage:'/four.png',
+            projectImage:'/linkcreatoradmin.png',
             id:3,
-            porjectSummary:"Traders of Africa web base and ecommerce platform specializing in bulk agricultural produce purchase for aggregators",
-            title:'Sporty Credit',
-            stackOne:'#React Js',
+            porjectSummary:"The Linkcreator Admin Dashboard used for the management of the Linkcreator SaaS platform.",
+            title:'Linkcreator Admin',
+            stackOne:'#Next Js',
             stackTwo:'#Boostrap',
-            stackThree:'#Postgre sql',
-            stackFour:'#Typescript Js'
+            stackThree:'#Django',
+            stackFour:'#Typescript Js',
+            url:'https://dev-admin.linkcreator.ai/'
         },
         {
-            projectImage:'/five.png',
+            projectImage:'/buyershub.jpg',
             id:4,
             porjectSummary:"Traders of Africa web base and ecommerce platform specializing in bulk agricultural produce purchase for aggregators",
             title:'Buyers Hub',
             stackOne:'React Js',
             stackTwo:'#Boostrap',
-            stackThree:'#Postgre sql',
-            stackFour:'#Typescript Js'
+            stackThree:'#Mysql',
+            stackFour:'#Socket IO',
+            url:'https://www.tradersofafrica.com/'
         },
         {
-            projectImage:'/six.png',
+            projectImage:'/evo.jpg',
             id:5,
-            porjectSummary:"Traders of Africa web base and ecommerce platform specializing in bulk agricultural produce purchase for aggregators",
-            title:'Admin Linkcreator',
-            stackOne:'React Js',
-            stackTwo:'#Boostrap',
-            stackThree:'#Postgre sql',
-            stackFour:'#Typescript Js'
+            porjectSummary:"A responsive landing page for a gym and fitness center built using Vite, React Js and Tailwind CSS",
+            title:'EVOGYM Landing Page',
+            stackOne:'JavaScript',
+            stackTwo:'#Tailwind CSS',
+            stackThree:'#Vite Js',
+            stackFour:'#Framer Motion',
+            url:'https://gym-project-using-typescript-upl.pages.dev/'
         },
         {
-            projectImage:'/two.png',
+            projectImage:'/momocredit.png',
             id:6,
-            porjectSummary:"Traders of Africa web base and ecommerce platform specializing in bulk agricultural produce purchase for aggregators",
-            title:'Market Place',
-            stackOne:'#React Js',
-            stackTwo:'#Boostrap',
-            stackThree:'#Postgre sql',
-            stackFour:'#Typescript Js'
+            porjectSummary:"Momocredits is a digital money lending company, providing individuals with credit and micro loan solutions personal and busines use",
+            title:'Momocredits Page',
+            stackOne:'#Gatsby Js',
+            stackTwo:'#Tailwind',
+            stackThree:'#Animation',
+            stackFour:'#Typescript Js',
+            url:'https://momocredits.com/'
         },
     ];
 
@@ -100,7 +108,9 @@ export default function Projects () {
                     <div>
                         <div className={styles.projectgrid}>
                             {myProjects.map((project) => (
-                                <TiltingCard key={project.id} project={project} />
+                                 <Link href={project.url} target="_blank" rel="noopener noreferrer" key={project.id} style={{ textDecoration:'none'}}>
+                                <TiltingCard  project={project} />
+                                </Link>
                             ))}
                         </div>
                     </div>

@@ -28,7 +28,7 @@ export default function Mystacks () {
             title: "JavaScript"
         },
         {
-            image: "/type.png",
+            image: "/typescript.png",
             id:4,
             title: "TypeScript"
         },

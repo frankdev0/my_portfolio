@@ -32,11 +32,11 @@ export default function Navbar () {
     return (
         <nav className={`${styles.navbg} ${scrolled ? styles.scrolledd : ''}`}>
         <div className={styles.navwrap}>
-          <div><Image src='/next.png' alt='logo' width={50} height={50} /></div>
+          <div><Image src='/rmlogo.png' alt='logo' width={150} height={100} /></div>
           <div className={styles.desktopMenu}>
-            <Link href={'#'} className={styles.menuitems}>About</Link>
-            <Link href={'#'} className={styles.menuitems}>Experience</Link>
-            <Link href={'#'} className={styles.menuitems}>Project</Link>
+            <Link href={'#about'} className={styles.menuitems}>About</Link>
+            <Link href={'#experience'} className={styles.menuitems}>Experience</Link>
+            <Link href={'#project'} className={styles.menuitems}>Project</Link>
           </div>
           {/* MOBILE MENU  */}
           <div className={styles.mobileMenu}>
@@ -54,9 +54,9 @@ export default function Navbar () {
             )}
             {toggleMenu && (
               <div className={styles.mobilebg}>
-                <Link href={'#'} className={styles.mobilelinks} onClick={() => setToggleMenu(false)}>About</Link>
-                <Link href={'#'} className={styles.mobilelinks} onClick={() => setToggleMenu(false)}>Experience</Link>
-                <Link href={'#'} className={styles.mobilelinks} onClick={() => setToggleMenu(false)}>Project</Link>
+                <Link href={'#about'} className={styles.mobilelinks} onClick={() => setToggleMenu(false)}>About</Link>
+                <Link href={'#experience'} className={styles.mobilelinks} onClick={() => setToggleMenu(false)}>Experience</Link>
+                <Link href={'#project'} className={styles.mobilelinks} onClick={() => setToggleMenu(false)}>Project</Link>
               </div>
             )}
           </div>

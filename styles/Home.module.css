@@ -34,7 +34,7 @@
     font-size: 1.2rem;
     text-decoration: none;
     font-weight: 400;
-    padding: 0rem 0.5rem;
+    padding: 0rem 1.3rem;
     color: #AAA6C3;
     cursor: pointer;
   }
@@ -334,6 +334,18 @@ justify-content: center;
     color: #F3F3F3;
   }
 
+  .starsign {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    inset: -0;
+  }
+
 .company{
     font-size: 1rem;
     color: #AAA6C3;
@@ -353,4 +365,81 @@ justify-content: center;
   
   .herotext, .introtext {
     animation: slideUp 1s ease-out;
+  }
+
+  /* MEDIA QUERIES */
+
+  @media  screen and (max-width: 1200px) {
+    .stackgrid{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-right: 0rem;
+      gap: 20px;
+    }  
+    .eachstack{
+      height: 100px;
+      width: 100%;
+    }
+    .projectgrid{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+
+  @media  screen and (max-width: 900px) {
+    .herotext{
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .introtext{
+      font-size: 2rem;
+      padding: 0rem 1.5rem;
+      font-weight: 500;
+      width: 100%;
+  }
+
+  .pillwrap{
+    gap: 5px;
+    margin-top: 5rem;
+}
+
+.herobg {
+  height: auto;
+  padding-bottom: 5rem;
+}
+.introwrapper{
+  padding: 0rem 1.5rem;
+}
+
+.stackgrid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-right: 0rem;
+}
+
+.eachstack{
+  height: 100px;
+  width: 100%;
+}
+
+.introductiontext{
+  font-size: 0.9rem;
+}
+
+.overview{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.projectgrid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.navbg {
+
+  padding: 20px 20px;
+}
   }
