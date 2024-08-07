@@ -29,16 +29,16 @@ export default function Home() {
         <Navbar/>
         <Herosection/>
       </div>
-      <section id="about">
+      <section id="about" className="pt-3">
         <Overview/>
       </section>
       
         <Mystacks/>
 
-      <section id="experience">
+      <section id="experience" className="pt-3">
       <Experience/>
       </section>
-      <section id="project">
+      <section id="project" className="pt-3">
         <Projects/>
       </section>
         <div className={styles.introwrapper}>

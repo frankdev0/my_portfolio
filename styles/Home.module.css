@@ -22,6 +22,16 @@
     z-index: 10000;
     width: 100%;
 }
+
+.menuitems.active {
+  color: #ffffff; /* active color */
+  font-size: 1.2rem;
+}
+
+.mobilelinks.active {
+  color: #ffffff; /* active color */
+  font-size: 1rem;
+}
   
   .navwrap {
     display: flex;
@@ -77,6 +87,7 @@
       font-size: 1rem;
       font-weight: 400;
       color: #AAA6C3;
+      text-decoration: none;
       padding: 0.3rem 0rem;
       font-weight: 500;
       cursor: pointer;
