@@ -1,5 +1,5 @@
 .herobg {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../public/background.png');
+    background-image: url('../public/herobg.png');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -107,7 +107,7 @@ justify-content: center;
 }
 
 .roundball{
-    background-color: #BF61FF;
+    background-color: #8742b4;
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -117,7 +117,7 @@ justify-content: center;
     height: 5px;
     width: 300px;
     /* background-color: #BF61FF; */
-    background: linear-gradient(to right, #BF61FF, black);
+    background: linear-gradient(to right, #8e4bbb, black);
 }
 
 
@@ -170,6 +170,34 @@ justify-content: center;
     justify-content: center;
     align-items: center;
 }
+
+.ballContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+.boxball {
+  width: 35px;
+  height: 64px;
+  border-radius: 1.5rem; 
+  border: 3.5px solid #AAA6C3; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px;
+}
+
+.ball {
+  width: 12px;
+  height: 12px; 
+  border-radius: 50%; 
+  background-color: #AAA6C3; 
+  margin-bottom: 4px; 
+}
+
 
 .introwrapper{
     background-color: #050816;
@@ -401,7 +429,7 @@ justify-content: center;
   @media  screen and (max-width: 900px) {
     .herotext{
       padding-top: 4rem;
-      font-size: 2rem;
+      font-size: 2.3rem;
       font-weight: 700;
     }
 
@@ -435,6 +463,10 @@ justify-content: center;
 .eachstack{
   height: 100px;
   width: 100%;
+}
+
+.ballContainer {
+  padding: 4rem 0rem;
 }
 
 .introductiontext{
