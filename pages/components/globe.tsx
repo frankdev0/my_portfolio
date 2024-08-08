@@ -12,7 +12,7 @@ const {scene} = useGLTF('/assets/scene.gltf');
     return (
         <primitive
         object={scene}
-        scale={1.5}
+        scale={3.0}
         position-y={0}
         rotation-y={0}
         />

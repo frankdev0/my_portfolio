@@ -40,7 +40,7 @@ export default function Navbar () {
     return (
         <nav className={`${styles.navbg} ${scrolled ? styles.scrolledd : ''}`}>
         <div className={styles.navwrap}>
-          <div><Image src='/rmlogo.png' alt='logo' width={150} height={100} /></div>
+          <div><Image src='/rmlogo.png' alt='logo' width={80} height={80} /></div>
           <div className={styles.desktopMenu}>
             <Link href={'#about'} className={`${styles.menuitems} ${isActive('about') ? styles.active : ''}`}>
             About</Link>

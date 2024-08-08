@@ -53,12 +53,12 @@ export default function Mystacks () {
             title: "Tailwind CSS"
         },
         {
-            image: "/node.png",
+            image: "/nodejs.png",
             id:9,
             title: "Node JS"
         },
         {
-            image: "/mongo.png",
+            image: "/mongodb.png",
             id:10,
             title: "Mongo DB"
         },
@@ -99,7 +99,7 @@ export default function Mystacks () {
                         transition={{duration:0.3, delay: i * 0.5}}
                         >
                             <div>
-                        <Image src={stack.image} alt='stacks' width={60} height={50}/>
+                        <Image src={stack.image} alt='stacks' width={50} height={40}/>
                         <h5 className={styles.stacktitle}>{stack.title}</h5>
                         </div>
                     </motion.div>
