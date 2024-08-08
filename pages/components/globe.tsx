@@ -2,15 +2,16 @@ import styles from '@/styles/Home.module.css'
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber';
 import {OrbitControls, Preload, useGLTF} from '@react-three/drei';
-import CanvasLoader from './canvasLoader';
+// import CanvasLoader from './canvasLoader';
+import CustomLoader from './canvasLoader';
 
 
 const Globe = () => {
-const earth = useGLTF('/assets/scene.gltf');
+const {scene} = useGLTF('/assets/scene.gltf');
 
     return (
         <primitive
-        object={earth.scene}
+        object={scene}
         scale={1.5}
         position-y={0}
         rotation-y={0}
@@ -20,6 +21,7 @@ const earth = useGLTF('/assets/scene.gltf');
 
         const EarthCanvas = () => { 
           return (
+            // <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
             <Canvas
             shadows
             frameloop='demand'
@@ -32,7 +34,7 @@ const earth = useGLTF('/assets/scene.gltf');
               position: [-4, 3, 6]
             }}
             >
-              <Suspense fallback={<CanvasLoader/>}>
+              <Suspense fallback={null}>
                 <OrbitControls 
                 autoRotate
                 enableZoom={false}
@@ -43,6 +45,7 @@ const earth = useGLTF('/assets/scene.gltf');
                 <Preload all />
                </Suspense>
             </Canvas>
+            // </div>
           )
         }
 
