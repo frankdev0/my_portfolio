@@ -33,7 +33,7 @@ export default function Mystacks () {
             title: "TypeScript"
         },
         {
-            image: "/react.png",
+            image: "/reactjs.png",
             id:5,
             title: "React JS"
         },
