@@ -40,7 +40,7 @@ export default function Navbar () {
     return (
         <nav className={`${styles.navbg} ${scrolled ? styles.scrolledd : ''}`}>
         <div className={styles.navwrap}>
-          <div><Image src='/rmlogo.png' alt='logo' width={80} height={80} /></div>
+          <div><Image src='/de.png' alt='logo' width={80} height={30} /></div>
           <div className={styles.desktopMenu}>
             <Link href={'#about'} className={`${styles.menuitems} ${isActive('about') ? styles.active : ''}`}>
             About</Link>
@@ -66,7 +66,12 @@ export default function Navbar () {
               />
             )}
             {toggleMenu && (
+              
               <div className={styles.mobilebg}>
+                 <MdOutlineClose
+                className={styles.barsicon}
+                onClick={() => setToggleMenu(!toggleMenu)}
+              />
                 <Link href={'#about'} className={`${styles.mobilelinks} ${isActive('about') ? styles.active : ''}`} onClick={() => setToggleMenu(false)}>
                About
                 </Link>
