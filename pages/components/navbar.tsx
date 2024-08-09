@@ -38,6 +38,7 @@ export default function Navbar () {
 
 
     return (
+      <div className={styles.fullHeight}>
         <nav className={`${styles.navbg} ${scrolled ? styles.scrolledd : ''}`}>
         <div className={styles.navwrap}>
           <div><Image src='/de.png' alt='logo' width={80} height={30} /></div>
@@ -86,5 +87,6 @@ export default function Navbar () {
           </div>
         </div>
       </nav>
+      </div>
             )
         }
