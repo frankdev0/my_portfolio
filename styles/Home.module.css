@@ -118,7 +118,6 @@ justify-content: center;
 .line{
     height: 5px;
     width: 300px;
-    /* background-color: #BF61FF; */
     background: linear-gradient(to right, #8e4bbb, black);
 }
 
@@ -475,6 +474,10 @@ justify-content: center;
 
 .ballContainer {
   padding: 4rem 0rem;
+}
+
+.line{
+  width: 50%;
 }
 
 .introductiontext{
